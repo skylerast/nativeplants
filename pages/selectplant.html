@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Native Plant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="../CSS/style.css">
+<link rel="icon" type="image/x-icon" href="/media/logofi.png">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-shadow">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../media/logofi.png" alt="Logo" aria-label="Logo" style="margin-left: 20px;" />Luminaras
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/selectplant.html">Plant Finder Tool</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Plant Native
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="../pages/wildlife.html">Biodiversity</a></li>
+                        <li><a class="dropdown-item" href="../pages/sciencesay.html">Science Says</a></li>
+                        <li><a class="dropdown-item" href="../pages/plantmaint.html">Plant Maintaince</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/faq.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+  <section class="text-center py-5">
+    <p class="text-uppercase small mb-1" style="letter-spacing:0.2em; color:#555;">Discover your plant</p>
+    <h2 class="display-6 mb-1 fw-bold" style=" color:#a41414;">Native Plant Finder</h2>
+    <p class="text-muted mb-4" style="max-width:700px; margin:auto;">
+      Sort by color, size, and location!
+    </p>
+
+    <div class="container">
+      <div class="row g-3 align-items-end justify-content-center mb-4">
+        <!-- Type -->
+        <div class="col-6 col-sm-4 col-md-3">
+          <label class="form-label small text-uppercase text-muted mb-1" style="letter-spacing:.1em;">Type</label>
+          <select class="form-select" aria-label="Type">
+            <option selected>All Types</option>
+            <option>Herbs</option>
+            <option>Shrubs</option>
+            <option>Trees</option>
+            <option>Climbers</option>
+            <option>Keystones</option>
+          </select>
+        </div>
+
+        <!-- By Region -->
+        <div class="col-6 col-sm-4 col-md-3">
+          <label class="form-label small text-uppercase text-muted mb-1" style="letter-spacing:.1em;">Region</label>
+          <select class="form-select" aria-label="Region">
+            <option selected>All Regions</option>
+            <option>North</option>
+            <option>South</option>
+            <option>Southeast</option>
+            <option>Central</option>
+            <option>West</option>
+            <option>East</option>
+          </select>
+        </div>
+
+        <!-- Bloom Time -->
+        <div class="col-6 col-sm-4 col-md-3">
+          <label class="form-label small text-uppercase text-muted mb-1" style="letter-spacing:.1em;">Bloom Time</label>
+          <select class="form-select" aria-label="Bloom Time">
+            <option selected>All Bloom Times</option>
+            <option>Spring</option>
+            <option>Summer</option>
+            <option>Fall</option>
+          </select>
+        </div>
+
+        <!-- Flower Color -->
+        <div class="col-6 col-sm-4 col-md-3">
+          <label class="form-label small text-uppercase text-muted mb-1" style="letter-spacing:.1em;">Flower
+            Color</label>
+          <select class="form-select" aria-label="Flower Color">
+            <option selected>All Colors</option>
+            <option>Blue</option>
+            <option>Purple</option>
+            <option>Red</option>
+            <option>Pink</option>
+            <option>White</option>
+            <option>Yellow</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3" data-type="trees" data-region="east" data-bloom="spring" data-color="yellow" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/gingko.jpg" class="card-img-top" alt="plant1" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Ginkgo</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3" data-type="herbs" data-region="east" data-bloom="summer" data-color="yellow" >
+          <div class="card shadow-sm h-100" data-type="herb" data-region="east" data-bloom="summer" data-color="yellow" >
+            <img src="../media/daylily.jpg" class="card-img-top" alt="plant2" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Daylily</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3" data-type="trees" data-region="southeast" data-bloom="summer" data-color="white" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/taek.jpg" class="card-img-top" alt="plant3" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Teak</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3" data-type="trees" data-region="south" data-bloom="summer" data-color="white" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/ficus.jpg" class="card-img-top" alt="plant4" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Sacred Fig</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3" data-type="climbers" data-region="southeast" data-bloom="summer" data-color="white" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/jasmine.jpg" class="card-img-top" alt="plant5" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Jasmine</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3" data-type="herbs" data-region="central" data-bloom="spring" data-color="yellow" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/tarda.jpg" class="card-img-top" alt="plant6" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Tarda Tulip</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3" data-type="shrubs" data-region="central" data-bloom="spring" data-color="yellow" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/cypress.jpg" class="card-img-top" alt="plant7" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Siberian Cypress</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3" data-type="shrubs" data-region="southeast" data-bloom="summer" data-color="yellow" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/Frangipani.webp" class="card-img-top" alt="plant8" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Frangipani</h6>
+            </div>
+          </div>
+        </div>
+          <div class="col-6 col-md-3" data-type="shrubs" data-region="east" data-bloom="" data-color="pink" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/hibiscus.jpg" class="card-img-top" alt="plant7" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Tropical Hibiscus </h6>
+            </div>
+          </div>
+        </div>
+         <div class="col-6 col-md-3" data-type="trees" data-region="southeast" data-bloom="summer" data-color="purple">
+          <div class="card shadow-sm h-100">
+            <img src="../media/crape.jpg" class="card-img-top" alt="plant8" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Crape myrtle</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-type="keystones" data-region="southeast" data-bloom="all bloom times" data-color="green" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/banyan.jpg" class="card-img-top" alt="plant7" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Chinese Banyan</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-type="climbers" data-region="east" data-bloom="spring" data-color="white" >
+          <div class="card shadow-sm h-100">
+            <img src="../media/clem.jpg" class="card-img-top" alt="plant7" style="height:180px; object-fit:cover;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-center" style="font-family: Georgia, serif;">Chinese clematis</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End -->
+  <div class="container hero-wrap">
+    <div class="card-soft mx-auto" style="max-width: 1200px;">
+      <div class="row g-0 align-items-center layout" style="display:flex; gap:0;">
+        <div class="col-md-5 img-col" style="padding-right: 28px;">
+          <img src="https://i.pinimg.com/1200x/34/b6/c3/34b6c36c449892acb5d51f6ba69917c0.jpg" alt="small container"
+            class="smbox" style="width:100%; height:100%; max-height: 360px; margin-bottom: 13px;">
+        </div>
+
+        <div class="col-md-7 text-col">
+          <div class="p-0" style="padding-left:0;">
+            <h2 class="mb-6" style="font-size: 28px; font-weight: 700; letter-spacing: .2px;">
+              Planting Native In Small Spaces
+            </h2>
+
+            <p class="mb-4" style="color:#333; line-height:1.5;">
+              For those working with limited space, plenty of native plants offer powerful wildlife advantages despite
+              their modest size. Here are a few tips for planting in small spaces!
+            </p>
+
+            <div class="tip-item" aria-label="tip1">
+              <div class="tip-icon" aria-hidden="true" style="background:#111;">1</div>
+              <div>
+                <div class="tip-title">Use Sustainable Containers</div>
+                <div class="tip-desc">
+                  If containers are part of your small-space garden, choose more sustainable options whenever possible. This means avoiding plastic containers and instead using pots made from recycled, reclaimed, or eco-friendly materials to reduce environmental impact.
+                </div>
+              </div>
+            </div>
+
+            <div class="tip-item" aria-label="tip2" style="margin-top: 6px;">
+              <div class="tip-icon" aria-hidden="true" style="background:#111;">2</div>
+              <div>
+                <div class="tip-title">Removing Invasives</div>
+                <div class="tip-desc">
+                  One advantage of small-space gardening is that it makes managing invasive or non-native plants much easier. On large properties, removing these species can feel overwhelming and may take years or even decades to fully address.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Addtional components -->
+   <section class="my-5">
+  <div class="container">
+    <h2 class="text-center mb-4 text-success addi-title fw-bold">Additional Habitat Components</h2>
+    <div class="row g-4 justify-content-center">
+      <!-- Bird Feeders -->
+      <div class="col-12 col-sm-6 col-md-4 d-flex">
+        <div class="card h-100 text-center mx-auto">
+          <img src="https://avianreport.com/wp-content/uploads/2019/08/optimized.jpg" class="card-img-top" alt="birdfeeder" />
+          <div class="addi-body">
+            <h4 class="addin-title mb-2">Bird Feeders</h4>
+            <p class="addi-text mb-0">
+              There are many types of bird feeders designed for different foods. Tube, hopper, and tray feeders offer seeds, nectar feeders attract hummingbirds and orioles, and suet cages support woodpeckers and other insect-eating birds. Mealworms can be used in special feeders for birds that do not eat seeds.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nesting Boxes -->
+      <div class="col-12 col-sm-6 col-md-4 d-flex">
+        <div class="card h-100 text-center mx-auto">
+          <img src="https://pim.vivara.nl/ProductMedia/NestBoxes/32mmNestBoxes/907600119/90760-1.jpg" class="card-img-top" alt="nestingbox" />
+          <div class="addi-body">
+            <h4 class="addin-title mb-2">Nesting Boxes</h4>
+            <p class="addi-text mb-0">
+              Many bird species depend on natural cavities in trees or branches to build nests, lay eggs, and raise their young. Nesting boxes, also known as birdhouses, mimic these natural shelters and provide birds with a safe and accessible place to live and reproduce.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bee houses -->
+      <div class="col-12 col-sm-6 col-md-4 d-flex">
+        <div class="card h-100 text-center mx-auto">
+          <img src="https://www.farmersalmanac.com/wp-content/uploads/2022/05/Bee-House-1200x900-1.jpeg" class="card-img-top" alt="bee houses" />
+          <div class="addi-body">
+            <h4 class="addin-title mb-2">Bee houses</h4>
+            <p class="addi-text mb-0">
+              Many bee species rely on small natural cavities in wood, stems, or soil to lay their eggs and shelter their young. Bee houses replicate these natural nesting spaces, providing a safe and convenient habitat that supports pollinators and helps maintain healthy ecosystems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ENd -->
+     <footer class="text-light pt-4 pb-3 border-top border-light" style="background-color: rgb(2, 52, 2);">
+      <div class="container py-4">
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-md-4 col-lg-3">
+            <h5 class="mb-2 fw-bold">Luminaras</h5>
+            <p class="mb-1 small">
+              A website where we offer details about indigenous trees and easy-to-follow methods to maintain them.
+            </p>
+            <p class="mb-1 small opacity-75">95 9975446996</p>
+            <p class="mb-1 small opacity-75">95 9962870281</p>
+          </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <h6 class="text-uppercase fw-semibold mb-2">Menu</h6>
+          <ul class="list-unstyled small mb-0">
+            <li class="mb-1"><a href="../index.html" class="text-light text-decoration-none">Home</a></li>
+            <li class="mb-1"><a href="../pages/wildlife.html" class="text-light text-decoration-none">Biodiversity</a>
+            </li>
+            <li class="mb-1"><a href="../pages/sciencesay.html" class="text-light text-decoration-none">Science Says</a>
+            </li>
+            <li class="mb-1"><a href="../pages/selectplant.html" class="text-light text-decoration-none">Select
+                Plant</a></li>
+            <li class="mb-1"><a href="../pages/plantmaint.html" class="text-light text-decoration-none">Plant
+                Maintaince</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <h6 class="text-uppercase fw-semibold mb-2">More</h6>
+          <ul class="list-unstyled small mb-0">
+            <li class="mb-1"><a href="../pages/aboutus.html" class="text-light text-decoration-none">About Us</a></li>
+            <li class="mb-1"><a href="../pages/faq.html" class="text-light text-decoration-none">FAQs</a></li>
+            <li class="mb-1"><a href="../pages/faq.html" class="text-light text-decoration-none">Citation</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light opacity-25 my-4">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <span class="small">&copy; 2025 Luminaras. All Rights Reserved.</span>
+        </div>
+        <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0">
+          <span class="ms-3 d-inline-block">
+            <a href="https://facebook.com/" class="text-light text-decoration-none me-2" aria-label="Facebook"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://pinterest.com/" class="text-light text-decoration-none me-2" aria-label="Pinterest"><i
+                class="fa-brands fa-pinterest"></i></a>
+            <a href="http://instagram.com/" class="text-light text-decoration-none me-2" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a2d78ab0db.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+
+    const typeSelect = document.querySelector('select[aria-label="Type"]');
+    const regionSelect = document.querySelector('select[aria-label="Region"]');
+    const bloomSelect = document.querySelector('select[aria-label="Bloom Time"]');
+    const colorSelect = document.querySelector('select[aria-label="Flower Color"]');
+    const plantCards = document.querySelectorAll('.container .row.g-4 > div');
+
+ 
+    function filterPlants() {
+        
+        const selectedType = typeSelect.value.toLowerCase();
+        const selectedRegion = regionSelect.value.toLowerCase();
+        const selectedBloom = bloomSelect.value.toLowerCase();
+        const selectedColor = colorSelect.value.toLowerCase();
+
+       
+        plantCards.forEach(cardContainer => {
+        
+            const cardType = cardContainer.getAttribute('data-type').toLowerCase();
+            const cardRegion = cardContainer.getAttribute('data-region').toLowerCase();
+            const cardBloom = cardContainer.getAttribute('data-bloom').toLowerCase();
+            const cardColor = cardContainer.getAttribute('data-color').toLowerCase();
+
+
+            const matchesType = selectedType === 'all types' || cardType === selectedType;
+            const matchesRegion = selectedRegion === 'all regions' || cardRegion === selectedRegion;
+            const matchesBloom = selectedBloom === 'all bloom times' || cardBloom === selectedBloom;
+            const matchesColor = selectedColor === 'all colors' || cardColor === selectedColor;
+
+            if (matchesType && matchesRegion && matchesBloom && matchesColor) {
+                cardContainer.style.display = 'block';
+            } else {
+                cardContainer.style.display = 'none';
+            }
+        });
+    }
+    typeSelect.addEventListener('change', filterPlants);
+    regionSelect.addEventListener('change', filterPlants);
+    bloomSelect.addEventListener('change', filterPlants);
+    colorSelect.addEventListener('change', filterPlants);
+
+</script>
+</body>
+
+</html>
